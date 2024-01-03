@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily : {
+        'Josefin-Sans' : ['Josefin Sans', 'sans-serif'],
+        'Josefin-Slab' : ['Josefin Slab', 'serif']
+
+
+      }
+    },
   },
   plugins: [],
 }
