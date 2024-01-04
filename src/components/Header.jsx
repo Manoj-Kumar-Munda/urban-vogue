@@ -13,16 +13,16 @@ const Header = () => {
         </div>
         <ul className="flex flex-1 justify-between px-10 items-center gap-8">
           <li className="text-gray-300 transition-colors hover:text-white hover:cursor-pointer">
-            HOME
+            <span className="link-text">HOME</span>
           </li>
           <li className="text-gray-300 transition-colors hover:text-white hover:cursor-pointer">
-            EXPLORE
+            <span className="link-text">EXPLORE</span>
           </li>
           <li className="text-gray-300 transition-colors hover:text-white hover:cursor-pointer">
-            CIRCULATORY
+            <span className="link-text">CIRCULATORY</span>
           </li>
           <li className="text-gray-300 transition-colors hover:text-white hover:cursor-pointer">
-            ACCOUNT
+            <span className="link-text">ACCOUNT</span>
           </li>
         </ul>
         <div className="flex-1 self-center">

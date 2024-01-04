@@ -16,7 +16,7 @@ const Body = () => {
       >
         <source src={bgVideo} />
       </video>
-      <div className="absolute inset-0 md:hidden">
+      <div className="w-full h-full md:hidden">
         <img
           src={bgMobile}
           alt={"bg-mobile-banner"}
