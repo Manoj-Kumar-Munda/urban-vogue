@@ -1,4 +1,5 @@
 import Hero from "./Hero";
+import SafariEdit from "./SafariEdit";
 import VideoBg from "./VideoBg";
 
 
@@ -7,6 +8,7 @@ const Body = () => {
     <>
       <Hero />
       <VideoBg />
+      <SafariEdit />
       
       
     </>

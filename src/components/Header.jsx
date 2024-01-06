@@ -1,7 +1,8 @@
 import { Search, ShoppingCart } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
 
 const Header = () => {
+  const [mouseOverIcon, setMouseOverIcon] = useState('')
   return (
     <header className="fixed z-10 top-0 bg-slate-800/35 left-0 right-0">
       <div className="hidden md:flex w-8/12 mx-auto justify-between py-4">
@@ -27,11 +28,11 @@ const Header = () => {
         </ul>
         <div className="flex-1 self-center">
           <div className="flex justify-end gap-8">
-            <div className="hover:cursor-pointer">
-              <Search strokeWidth={1} color={"#d1d5db"} />
+            <div className="hover:cursor-pointer" onMouseOver={() => setMouseOverIcon('search')} onMouseOut={() => setMouseOverIcon('')}>
+              <Search strokeWidth={1} color={ mouseOverIcon === 'search' ? "#fff" : "#d1d5db"} />
             </div>
-            <div className="hover:cursor-pointer">
-              <ShoppingCart strokeWidth={1} color={"#d1d5db"} />
+            <div className="hover:cursor-pointer" onMouseOver={() => setMouseOverIcon('cart')} onMouseOut={() => setMouseOverIcon('')} >
+              <ShoppingCart strokeWidth={1} color={ mouseOverIcon === 'cart' ? "#fff" : "#d1d5db"} />
             </div>
           </div>
         </div>
