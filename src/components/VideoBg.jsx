@@ -4,7 +4,7 @@ import bgThumbnail from "../assets/video_bg_thumbnail.webp"
 
 const VideoBg = () => {
   return (
-    <div className='w-screen h-screen'>
+    <div className='hidden md:block w-screen h-screen'>
         <video playsInline  className='w-full h-full' poster={bgThumbnail} autoPlay loop muted>
             <source src={videoBg} type="" />
         </video>
