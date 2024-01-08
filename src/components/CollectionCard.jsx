@@ -8,9 +8,9 @@ const CollectionCard = ({ pic, caption }) => {
         alt="pic-1"
         className="w-full h-full max-w-[360px] object-cover min-w-[280px]"
       />
-      <figcaption className="py-2 font-Josefin-Sans">
+      <p className="py-4 font-Josefin-Sans">
         {caption}
-      </figcaption>
+      </p>
     </div>
   );
 };
