@@ -2,6 +2,10 @@ import React from "react";
 import pic2 from "../assets/IMAGE-1.webp";
 import pic1 from "../assets/IMAGE-2.webp";
 import pic3 from "../assets/IMAGE-3.webp";
+import pic4 from "../assets/IMAGE-4.webp";
+import pic5 from "../assets/IMAGE-5.webp";
+import pic6 from "../assets/IMAGE-6.webp";
+import CollectionCard from "./CollectionCard";
 
 const Collection = () => {
   return (
@@ -12,37 +16,19 @@ const Collection = () => {
         </h1>
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center md:mb-14 mb-10">
         <div className="relative flex justify-start items-center gap-6 overflow-auto px-2 scroll-smooth">
-          <div className="aspect-[2/3] w-full h-full scroll-card ">
-            <img
-              src={pic1}
-              alt="pic-1"
-              className="w-full h-full max-w-[360px] object-cover min-w-[280px]"
-            />
-            <figcaption className="py-2 font-Josefin-Sans">
-              Whims & Fancies
-            </figcaption>
-          </div>
+          <CollectionCard pic={pic1} caption="Whims & Fancies" />
+          <CollectionCard pic={pic3} caption="Wild Romance" />
+          <CollectionCard pic={pic2} caption="Cityscape" />
+        </div>
+      </div>
 
-          <div className="aspect-[2/3] w-full h-full scroll-card">
-            <img
-              src={pic3}
-              alt="pic-3"
-              className="w-full h-full max-w-[360px] object-cover min-w-[280px]"
-            />
-            <p className="py-2 font-Josefin-Sans">Wild Romance</p>
-          </div>
-          <div className=" aspect-[2/3] w-full h-full scroll-card">
-            <img
-              src={pic2}
-              alt="pic-2"
-              className="w-full h-full max-w-[360px] object-cover min-w-[280px]"
-            />
-            <figcaption className="py-2 font-Josefin-Sans">
-              Cityscape
-            </figcaption>
-          </div>
+      <div className="flex justify-center items-center md:mb-14 mb-10">
+        <div className="relative flex justify-start items-center gap-6 overflow-auto px-2 scroll-smooth">
+          <CollectionCard pic={pic4} caption="Newtro Twist" />
+          <CollectionCard pic={pic5} caption="#IDGAF" />
+          <CollectionCard pic={pic6} caption="Born To Shine" />
         </div>
       </div>
     </section>
