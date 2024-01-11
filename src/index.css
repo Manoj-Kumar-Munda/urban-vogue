@@ -44,13 +44,26 @@ video[poster]{
 }
 
 
-.scrollable-container{
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-}
 
-.scroll-card{
-  scroll-snap-align: center;
-}
+
   
+.scroller{
+  overflow: hidden;
+  color: #fff;
+  background-color: #1f1f1f;
+  padding-block: .2rem;
+}
 
+.scroller__inner{
+  width: max-content;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll{
+  to{
+      transform: translateX(calc(-50% - 1rem));
+  }
+}

@@ -9,15 +9,15 @@ import CollectionCard from "./CollectionCard";
 
 const Collection = () => {
   return (
-    <section className="px-4 md:px-6">
+    <section className="pl-4 md:px-6">
       <div className="py-8 md:py-12 ">
-        <h1 className="text-center font-Josefin-Slab font-bold text-5xl">
+        <h1 className="text-center font-Josefin-Slab font-extrabold text-3xl md:text-5xl">
           Other Collections
         </h1>
       </div>
 
       <div className="flex justify-center items-center md:mb-14 mb-10">
-        <div className="relative flex justify-start items-center gap-6 overflow-auto px-2 scroll-smooth">
+        <div className="relative flex justify-start items-center gap-4 md:gap-6 overflow-auto px-2 scroll-smooth">
           <CollectionCard pic={pic1} caption="Whims & Fancies" />
           <CollectionCard pic={pic3} caption="Wild Romance" />
           <CollectionCard pic={pic2} caption="Cityscape" />

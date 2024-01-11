@@ -6,7 +6,7 @@ import "../styles/mainPage.css";
 
 const Hero = () => {
   return (
-    <div className="w-screen h-screen relative overflow-hidden ">
+    <div className="w-screen h-full md:h-screen relative overflow-hidden ">
         <video
           className="w-full h-full hidden md:block"
           poster={bgThumbnail}
@@ -23,6 +23,15 @@ const Hero = () => {
             className="object-cover object-center w-full "
           />
         </div>
+
+        <div class="scroller md:hidden">
+        <div class="scroller__inner">
+            <span>Limited Edition Collection | Eco-Conscious Style Meets Retro Charm</span>
+            <span>Limited Edition Collection | Eco-Conscious Style Meets Retro Charm</span>
+
+        </div>
+
+    </div>
 
         <div className="hidden  absolute bottom-32 left-0 right-0 md:flex flex-col items-center">
           <h1 className="text-white font-Josefin-Sans font-bold text-7xl leading-normal">
