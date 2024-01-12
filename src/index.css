@@ -67,3 +67,7 @@ video[poster]{
       transform: translateX(calc(-50% - 1rem));
   }
 }
+
+.hero-img{
+  mask-image: linear-gradient(180deg, #000, #00000031);
+}

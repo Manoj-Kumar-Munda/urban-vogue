@@ -1,6 +1,6 @@
 import React from "react";
 import bgVideo from "../assets/bg-video.mp4";
-import bgMobile from "../assets/top_banner.webp";
+import bgMobile from "../assets/Collection/Chic.webp";
 import bgThumbnail from "../assets/main-bg-thumbnail.webp";
 import "../styles/mainPage.css";
 
@@ -16,11 +16,11 @@ const Hero = () => {
         >
           <source src={bgVideo} />
         </video>
-        <div className="w-full h-full md:hidden">
+        <div className="w-full h-full md:hidden bg-black">
           <img
             src={bgMobile}
             alt={"bg-mobile-banner"}
-            className="object-cover object-center w-full "
+            className="object-cover object-center w-full hero-img"
           />
         </div>
 
