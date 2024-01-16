@@ -1,8 +1,8 @@
 import React from "react";
-import bgVideo from "../assets/bg-video.mp4";
-import bgMobile from "../assets/Collection/Chic.webp";
-import bgThumbnail from "../assets/main-bg-thumbnail.webp";
-import "../styles/mainPage.css";
+import bgVideo from "../../assets/bg-video.mp4";
+import bgMobile from "../../assets/Collection/Chic.webp";
+import bgThumbnail from "../../assets/main-bg-thumbnail.webp";
+import "../../styles/mainPage.css";
 
 const Hero = () => {
   return (

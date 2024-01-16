@@ -1,9 +1,9 @@
-import React from "react";
-import videoBg from "../assets/video-bg.mp4";
-import bgThumbnail from "../assets/video_bg_thumbnail.webp";
-import british from "../assets/british_heritage.webp";
+import React from 'react';
+import videoBg from "../../assets/intro.mp4";
+import bgThumbnail from "../../assets/video_bg_thumbnail.webp";
+import british from "../../assets/british_heritage.webp";
 
-const VideoBg = () => {
+const Intro = () => {
   return (
     <>
       <div className="hidden md:block w-screen h-screen">
@@ -24,7 +24,7 @@ const VideoBg = () => {
 
       </div>
     </>
-  );
-};
+  )
+}
 
-export default VideoBg;
+export default Intro

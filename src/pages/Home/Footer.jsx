@@ -1,5 +1,5 @@
 import React from 'react'
-import footerBg from '../assets/footer.webp'
+import footerBg from '../../assets/footer.webp'
 
 const Footer = () => {
   return (
